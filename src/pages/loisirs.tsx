@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronRight, Facebook, Youtube, Instagram,Linkedin} from 'lucide-react';
+import { Facebook, Youtube, Instagram,Linkedin} from 'lucide-react';
 
 const CentreInteret = () => {
   const [scrollPosition, setScrollPosition] = useState(0);

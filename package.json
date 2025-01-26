@@ -1,6 +1,6 @@
 {
   "name": "omar-website",
-  "homepage": "https://floaty-bone.github.io/ali-portfolio/",
+  "homepage": "https://floaty-bone.github.io/ali-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "lucide-react": "^0.469.0",

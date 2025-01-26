@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronRight, Facebook, Youtube, Instagram, Linkedin } from 'lucide-react';
+import { Facebook, Youtube, Instagram, Linkedin } from 'lucide-react';
 
 const ExperienceEducationPage = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -30,7 +30,7 @@ const ExperienceEducationPage = () => {
         });
       }, 100);
     };
-    
+
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Navigation - identical to main page */}

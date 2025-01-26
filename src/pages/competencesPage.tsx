@@ -5,7 +5,6 @@ const CompetencesPage = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [navVisible, setNavVisible] = useState(true);
   const [currentSkillIndex, setCurrentSkillIndex] = useState(0);
-  const [currentSoftwareIndex, setCurrentSoftwareIndex] = useState(0);
 
   const skills = [
     { 
@@ -77,17 +76,7 @@ const CompetencesPage = () => {
     );
   };
 
-  const handleSoftwareNext = () => {
-    setCurrentSoftwareIndex((prev) => 
-      (prev + 1) % software.length
-    );
-  };
-
-  const handleSoftwarePrev = () => {
-    setCurrentSoftwareIndex((prev) => 
-      prev === 0 ? software.length - 1 : prev - 1
-    );
-  };
+  
 
   
   const handleContactClick = (e: React.MouseEvent) => {
@@ -193,7 +182,7 @@ const CompetencesPage = () => {
             <section className="mb-16">
               <h2 className="text-4xl font-light mb-12 text-white">Outils et Logiciels</h2>
               <div className="grid grid-cols-6 gap-4">
-                {software.map((item, index) => (
+                {software.map((item) => (
                   <div 
                     key={item.name} 
                     className="flex flex-col items-center bg-white/10 p-4 rounded-lg"

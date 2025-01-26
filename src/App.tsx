@@ -10,10 +10,10 @@ import { BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 function App() {
 
   return (
-    <Router>
+    <Router basename='/ali-portfolio'>
       <Routes>
         <Route path='/educationExperience' element={<EducationExperience/>}/>
-        <Route path="/home" element={<MainPage/>} />
+        <Route path="/ali-portfolio" element={<MainPage/>} />
         <Route path='/downloadsPage' element={<DownloadsPage/>}/>
         <Route path='/competencesPage' element={<CompetencesPage/>}/>
         <Route path='/loisirs' element={<CentreInteret/>}/>
